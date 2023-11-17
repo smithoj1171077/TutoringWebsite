@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
 from blog.models import Blog, Subject
 
 # Create your views here.
@@ -13,3 +13,5 @@ def index_blogs(request):
     return render(request,'frontpage/blogindex.html',{
         'blogs' : blogs
     })
+
+
