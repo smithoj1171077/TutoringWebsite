@@ -1,0 +1,2 @@
+class PostcodeNotFoundException(Exception):
+    pass
