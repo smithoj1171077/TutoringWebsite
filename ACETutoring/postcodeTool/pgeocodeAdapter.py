@@ -12,7 +12,6 @@ class PGeoCodeAdapter(DistanceQueryInterface):
         validity_query = pgeocode.Nominatim(country='AU')
     
         # returns pandas df, if there is not an associated lattitude then it is not considered a valid postcode 
-        
         validity_query.query_postal_code(int(student_post_code))['latitude']
         if(np.isnan(validity_query.query_postal_code(int(student_post_code))['latitude'])):
             raise PostcodeNotFoundException

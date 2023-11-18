@@ -23,5 +23,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('',include('frontpage.urls')),
     path('blog/',include('blog.urls')),
+    path('new/',include('studentrequest.urls')),
     path('admin/', admin.site.urls), 
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) # warning don't use last concat in production
