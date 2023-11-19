@@ -1,7 +1,7 @@
-from postcodeQuery import DistanceQueryInterface
+from .postcodeQuery import DistanceQueryInterface
 import pgeocode
 import numpy as np 
-from exceptions import PostcodeNotFoundException
+from .exceptions import PostcodeNotFoundException
 
 """The adapter class protects the system from variation in the
 library used to retrieve the coordinates"""

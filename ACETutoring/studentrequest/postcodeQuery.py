@@ -1,4 +1,4 @@
-from exceptions import PostcodeNotFoundException
+from .exceptions import PostcodeNotFoundException
 
 """This class has functions which handle if a post code is possible to offer in person 
 tutoring for, it is done by a distance threshold between the there the tutoring business
