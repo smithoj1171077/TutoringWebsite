@@ -1,94 +1,105 @@
 # TutoringWebsite
-A practice website build with Django for a fictional tutoring business
-ACE Tutoring website
 
-link to Kanban board for project: https://github.com/users/smithoj1171077/projects/3/views/1
- 
-Owner: Oliver Smith
-Stakeholders: ACE Tutoring owner, tutors, and customers
-Status: in planning
-Release target 19th November
-All responsibilities are on Oliver Smith
- 
-background
- 
-ACE Tutoring specializes in helping high school students with their final year exams and assessments; the business employs tutors who provide one-on-one help to students. They also create and sell material such as subject guides and revision sheets to students.
- 
-Strategic fit
- 
-Currently, ACE Tutoring's primary source of customers is word of mouth and is thus limited to a smaller market. The website combined with advertising on social media is intended to expand the base of customers. Furthermore, the convenience of being able to arrange tutoring or purchase revision books online should boost demand for ACE Tutoring services.
- 
-Goals
- 
-Create a website that increases the reach of the business with a layout and provides a convenient portal for customers to arrange tutoring services and purchase material. There should be an appealing front page that entices the customers on entering the website, facilities for customers to review tuition services for different subjects send a request to the business to organize a tutor. There should be facilities to purchase the material created by the website.
- 
-User stories
- 
----------------------------------------------------------
- 
-Blog posts:
- 
-As the ACETutoring business owner, I want to be able to upload blogs about subjects to my site for prospective customers, who may find them insightful and thus more ready to make a purchase or return to the website to read more.
- 
-Acceptance Criteria
- 
-There should be a panel linking to the blog posts on the main page
-Each post should include the title, author, date, and some tags such as the subject and an image if one has been provided
-By default, the top of the list should be the latest blog post
-Customers should be able to filter by subject
-The link should take the user to a page that as all the basic information outlined in (2.) plus also the full blog
-Definition of done:
-The feature is implemented and passes testing
-It is asethtically pleasing and easy to use for uploaders and end users 
-The product owner accepts it
--------------------------------------------
-Tutor browsing 
-As a customer I want to be able to search for a tutor in a particular subject, to be able to review their background, i.e academic record and availability and to know if they  do online or inperson appointments. Also I want to know where they are able to meet for sessions. 
-Acceptance criteria 
-A browse page which contains the profiles of tutors employed by the company
-The user should be able to filter the list with drop down buttons for subject, availability, session type, and session location.
-The session location filter first needs the customer to enter the suburb they want the session to take place in; all tutors who are 'out of range' are filtered out.
-Definition of done 
-Feature is implemented and works correctly
-is shown to be easily usable 
-The search Has all the filters which are useful to the customer and reasonable to implement 
-The search page is integrated with the view tutor page 
--------------------------------------------- 
-Tutor details
+**A practice website built with Django for a fictional tutoring business - ACE Tutoring**
 
-As a customer I want to be able to send a request to the business for a tutor, either with a specific tutor I searched for, or a request based on the specific criteria I have filled out for the business owner to then find someone who fits it 
+*Link to Kanban board for project: [ACE Tutoring Kanban Board](https://github.com/users/smithoj1171077/projects/3/views/1)*
 
-Acceptence criteria 
-The tutor view page contains all the information about the tutor including a photo, their background, i.e academic record and availability and to know if they do online or inperson appointments. 
-There is a request booking button which takes the user to the request booking page
-Definition of done
-all the information is displayed nicely and there are no bugs
-the page is integrated with the rest of the site 
--------------------------------------------
-Booking page
+**Owner:** Oliver Smith  
+**Stakeholders:** ACE Tutoring owner, tutors, and customers  
+**Status:** In planning  
+**Release target:** 19th November  
+**All responsibilities are on Oliver Smith**
 
-As a customer I want to send a request in to the business for tutoring. I want to spend only the minimum necessary amount of time filling out forms. Therefore any information I have already provided in the filters should be auto-filled in the form if applicable. The form should include: the subject (mandatory), student name, purchaser name, contact number, time availabilities, preferred locations and preferred tutor. 
+## Background
 
-Acceptence criteria 
-The form is linked to from either the tutor details page or the main page 
-The following fields are present: mandatory: subject, student name, purchaser name, contact number. Optional: time availabilities, preferred locations and preferred tutor. 
-The database stores the form
-The business manager account is notified 
-Definition of Done:
-The feature is fully functional and has passed testing 
-the product owner finds it acceptable
---------------------------------------------
-Review request page
-As the manager of the business, I want a private dashboard to review the latest request forms submitted by customers. I want to see only the requests I have not responded to yet so my inbox is not cluttered. 
+ACE Tutoring specializes in helping high school students with their final year exams and assessments. The business employs tutors who provide one-on-one help to students and creates/sells materials like subject guides and revision sheets.
 
-Acceptance criteria 
-There is a scrolldown list of new requests ordered by latest
-The details of the requests are displayed
-The owner can mark as resolved and remove them from the que
-Definition of done
-The feature is implemented and working
-it is properly integrated into the rest of the website 
-----------------------------------------
-About us 
----------------------------------------
-Buy
+## Strategic Fit
+
+Currently relying on word of mouth, ACE Tutoring aims to expand its customer base through a website and social media advertising. The website aims to enhance customer convenience in arranging tutoring and purchasing materials.
+
+## Goals
+
+Create a website to increase business reach, featuring an appealing layout. Provide a convenient portal for customers to arrange tutoring services and purchase material. Include facilities for customers to review services, send requests for tutors, and purchase materials.
+
+## User Stories
+
+### Blog Posts
+
+As the ACE Tutoring business owner, I want to upload blogs about subjects to my site for prospective customers.
+
+**Acceptance Criteria:**
+- A panel linking to the blog posts on the main page.
+- Each post includes title, author, date, tags (subject), and an optional image.
+- Latest blog post appears at the top.
+- Customers can filter by subject.
+- Link takes the user to a page with full blog information.
+
+**Definition of Done:**
+- Implemented and passes testing.
+- Aesthetically pleasing and easy to use.
+- Product owner accepts it.
+
+### Tutor Browsing
+
+As a customer, I want to search for a tutor in a particular subject and review their background, availability, and session details.
+
+**Acceptance Criteria:**
+- Browse page with tutor profiles.
+- Filters for subject, availability, session type, and location.
+- Session location filter requires user's suburb.
+- Integrated with the view tutor page.
+
+**Definition of Done:**
+- Implemented and works correctly.
+- User-friendly.
+- Search has useful and reasonable filters.
+- Integrated with the view tutor page.
+
+### Tutor Details
+
+As a customer, I want to send a request for a tutor based on specific criteria.
+
+**Acceptance Criteria:**
+- Tutor view page with photo, background, and availability.
+- Request booking button leading to the request booking page.
+
+**Definition of Done:**
+- Information displayed nicely with no bugs.
+- Integrated with the site.
+
+### Booking Page
+
+As a customer, I want to send a tutoring request with minimal form-filling.
+
+**Acceptance Criteria:**
+- Form linked from tutor details or main page.
+- Mandatory fields: subject, student name, purchaser name, contact number.
+- Optional fields: time availabilities, preferred locations, and preferred tutor.
+- Database stores the form.
+- Business manager account is notified.
+
+**Definition of Done:**
+- Fully functional and passes testing.
+- Product owner finds it acceptable.
+
+### Review Request Page
+
+As the business manager, I want a private dashboard to review the latest request forms.
+
+**Acceptance Criteria:**
+- Scroll-down list of new requests ordered by the latest.
+- Details of requests displayed.
+- Owner can mark as resolved and remove them from the queue.
+
+**Definition of Done:**
+- Implemented and working.
+- Properly integrated into the website.
+
+## About Us
+
+[Content about the business]
+
+## Buy
+
+[Information about purchasing materials]
