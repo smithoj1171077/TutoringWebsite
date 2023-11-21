@@ -37,7 +37,7 @@ As the ACE Tutoring business owner, I want to upload blogs about subjects to my 
 **Definition of Done:**
 - Implemented and passes testing.
 - Aesthetically pleasing and easy to use.
-- Product owner accepts it.
+- All stakeholers accept it.
 
 ### Booking Page
 
