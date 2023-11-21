@@ -72,3 +72,7 @@ As a student/parent I want to be able to purchase additional subject guides from
 - check out form
 - database storage of items
 
+**Definition of done**
+- Fully functional and passes testing
+- is asethetically appealing and easy to use 
+
