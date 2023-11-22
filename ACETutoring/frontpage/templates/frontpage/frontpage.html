@@ -15,7 +15,7 @@
                 {% if request.path != '/' %} Home {% else %} ACE Tutoring {% endif %}</a>
              <div class="space-x-6">
                  <a href="{% url 'studentrequest:new' %}" class="px-6 py-3 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Sign up for a session</a>
-                 <a href="#" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Browse revision content</a>
+                 <a href="{% url 'store:bookindex' %}" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700">Browse revision content</a>
              </div>
          </nav>
 

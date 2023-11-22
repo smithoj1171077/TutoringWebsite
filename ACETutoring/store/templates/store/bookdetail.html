@@ -1,0 +1,45 @@
+{% extends 'frontpage/frontpage.html' %}
+
+{% block title%}{{ revisionbook.title }}{% endblock %}
+
+{% block content %}
+<div class="grid grid-cols-5 gap-6">
+  <div class="colspan-3">
+    <img src = "{{ revisionbook.image.url }}" class = "rounded-xl">
+    </div>
+
+  <div class="col-span-2 p-6 bg-gray-100 rounded-xl">
+    <h1 class="mb-6 text-3xl">{{ revisionbook.name }}</h1>
+    <p class="text-gray-500"><strong>Price: </strong>{{ revisionbook.price }}</p>
+    {% if revisionbook.description %}
+       <p class="text-gray-700">
+           <strong class="text-gray-500">Description:</strong><br>
+           {{ revisionbook.description }}
+       </p>
+    {% endif %}
+
+    <a href="#" class="inline-block mt-6 px-6 py-3 text-lg font-semibold bg-teal-500 rounded-xl text-white hover:bg-teal-700">Add to cart</a>
+
+
+  </div>
+</div>
+<div class="mt-6 px py-12 bg-gray-100 rounded-x1">
+        <h2 class="mb-12 text-2xl text-center">Related material </h2>
+        <div class="grid grid-cols-3 gap-3">
+           {% for revisionbook in related_revisionbooks %}
+            <div>
+                <a href="{% url 'revisionbook:bookdetail' revisionbook.id %}">
+                    <div>
+                        <img src="{{ revisionbook.image.url }}" class="rounded-t-xl">
+                    </div>
+
+                    <div class="p-6 bg-white rounded-b-xl">
+                        <h2 class="text-2xl">{{ revisionbook.title }}</h2>
+                        <p class="text-gray-500">Price: {{ revisionbook.price }} </p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
