@@ -6,8 +6,7 @@
 
 **Owner:** Oliver Smith  
 **Stakeholders:** ACE Tutoring owner, tutors, and customers  
-**Status:** In planning  
-**Release target:** 19th November  
+**Status:** In planning    
 **All responsibilities are on Oliver Smith**
 
 ## Background
@@ -38,44 +37,17 @@ As the ACE Tutoring business owner, I want to upload blogs about subjects to my 
 **Definition of Done:**
 - Implemented and passes testing.
 - Aesthetically pleasing and easy to use.
-- Product owner accepts it.
-
-### Tutor Browsing
-
-As a customer, I want to search for a tutor in a particular subject and review their background, availability, and session details.
-
-**Acceptance Criteria:**
-- Browse page with tutor profiles.
-- Filters for subject, availability, session type, and location.
-- Session location filter requires user's suburb.
-- Integrated with the view tutor page.
-
-**Definition of Done:**
-- Implemented and works correctly.
-- User-friendly.
-- Search has useful and reasonable filters.
-- Integrated with the view tutor page.
-
-### Tutor Details
-
-As a customer, I want to send a request for a tutor based on specific criteria.
-
-**Acceptance Criteria:**
-- Tutor view page with photo, background, and availability.
-- Request booking button leading to the request booking page.
-
-**Definition of Done:**
-- Information displayed nicely with no bugs.
-- Integrated with the site.
+- All stakeholers accept it.
 
 ### Booking Page
 
-As a customer, I want to send a tutoring request with minimal form-filling.
+As a customer, I want send the required information to get tutoring services online because that allows me to do it where ever and whenever I please as opposed to having to ring the business
 
 **Acceptance Criteria:**
-- Form linked from tutor details or main page.
-- Mandatory fields: subject, student name, purchaser name, contact number.
-- Optional fields: time availabilities, preferred locations, and preferred tutor.
+- Form linked from  main page.
+- subject (at least one, at most four), student name, parent or guardian name, at least one of contact number, student email or parent/guardian email.
+- online only, and postcode (online only is for if the student is distance learning; if it is ticked false then the assumption is that the student wants inperson sessions at their house).
+- if not online only then the postcode entered must be a valid Australian postcode and must be within 30 kms of the tutoring business postcode. 
 - Database stores the form.
 - Business manager account is notified.
 
@@ -83,23 +55,24 @@ As a customer, I want to send a tutoring request with minimal form-filling.
 - Fully functional and passes testing.
 - Product owner finds it acceptable.
 
-### Review Request Page
-
-As the business manager, I want a private dashboard to review the latest request forms.
-
-**Acceptance Criteria:**
-- Scroll-down list of new requests ordered by the latest.
-- Details of requests displayed.
-- Owner can mark as resolved and remove them from the queue.
-
-**Definition of Done:**
-- Implemented and working.
-- Properly integrated into the website.
 
 ## About Us
 
 [Content about the business]
 
-## Buy
+## Store
 
-[Information about purchasing materials]
+As a student/parent I want to be able to purchase additional subject guides from the tutoring business. 
+
+**Acceptance Criteria:**
+- front page links to index where the user can view the items for sale
+- user should be able to filter by subject
+- user should be able to click on an item and see a description, photo and price
+- add to cart
+- check out form
+- database storage of items
+
+**Definition of done**
+- Fully functional and passes testing
+- is asethetically appealing and easy to use 
+
