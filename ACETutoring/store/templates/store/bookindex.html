@@ -1,7 +1,22 @@
 {% extends 'frontpage/frontpage.html' %}
 {% block title %}Revision Books{% endblock %}
 {% block content %}
-   <div class="pb-6 grid grid-cols-4 gap-4 bg-gray-100">
+<style>
+    .image-container {
+        height: 200px;
+        /*hide overflow to prevent the lower part of the image being seen where the text description should be seen*/  
+        overflow: hidden; 
+    }
+
+    .image-container img {
+        width: 100%;  
+        height: 100%; 
+        /*maintain aspect-ratio*/
+        object-fit: cover;  
+    }
+</style>
+
+   <div class="pb-6 grid grid-cols-4 gap-4 bg-gray-100 grid">
       <div class="col-span-1">
         <a href="{% url 'store:view_cart' %}" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">View Cart</a>
       </div>
@@ -10,8 +25,8 @@
            {% for revisionbook in revisionbooks %}
             <div>
                 <a href="{% url 'store:bookdetail' revisionbook.id %}">
-                    <div>
-                        <img src="{{ revisionbook.image.url }}" class="rounded-t-xl h-48 auto-cols-auto-max">
+                    <div class="image-container">
+                        <img src="{{ revisionbook.image.url }}" class="rounded-t-xl">
                     </div>
 
                     <div class="p-6 bg-white rounded-b-xl">
