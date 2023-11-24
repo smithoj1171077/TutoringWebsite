@@ -3,7 +3,7 @@
 {% block content %}
    <div class="pb-6 grid grid-cols-4 gap-4 bg-gray-100">
       <div class="col-span-1">
-          <p class="font-semibold">Subjects</p>
+        <a href="{% url 'store:view_cart' %}" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">View Cart</a>
       </div>
        <div class="col-span-3">
            <div class="grid grid-cols-3 gap-3">
@@ -11,7 +11,7 @@
             <div>
                 <a href="{% url 'store:bookdetail' revisionbook.id %}">
                     <div>
-                        <img src="{{ revisionbook.image.url }}" class="rounded-t-xl">
+                        <img src="{{ revisionbook.image.url }}" class="rounded-t-xl h-48 auto-cols-auto-max">
                     </div>
 
                     <div class="p-6 bg-white rounded-b-xl">
@@ -22,7 +22,6 @@
             </div>
             {% endfor %}
         </div>
-
        </div>
    </div>
 {% endblock %}

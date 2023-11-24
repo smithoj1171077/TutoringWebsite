@@ -1,0 +1,34 @@
+{% extends 'frontpage/frontpage.html' %}
+{% block title %}Revision Books{% endblock %}
+{% block content %} 
+<body>
+    {% if checkout == True %}
+    <h1 class="text-lg text-gray-500 my-3">Thank you for your purchase</h1>
+    <a href="{% url 'store:bookindex' %}" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Continue Shopping</a>
+    {% else %}
+    <h1 class="text-lg text-gray-500">Your Shopping Cart</h1>
+ 
+    <div class="product-list">
+ 
+    {% for item in cart_items %}
+    <div class="my-2 col-span-2 p-4 bg-gray-100 rounded-xl">
+        <div class="product-item">
+            <p class="my-3 text-lg text-gray-500">{{ item.product.title }} ({{ item.quantity }})</p>
+            <p class="my-3 text-lg text-gray-500">Price: ${{ item.product.price }}</p>
+            <a href="{% url 'store:remove_from_cart' item.id %}" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Remove</a>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-lg text-gray-500">Your cart is empty.</p>
+    {% endfor %}
+ 
+    </div>
+ 
+    <p class="my-3 text-lg text-gray-500">Total Price: ${{ total_price }}</p>
+ 
+    <a href="{% url 'store:bookindex' %}" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Continue Shopping</a>
+    <a href="{% url 'store:check_out' %}" class="px-6 py-2 text-lg font-semibold bg-teal-500 text-white rounded-xl hover:bg-teal-700">Check Out</a>
+    {% endif %}
+</body>
+ 
+{% endblock %}

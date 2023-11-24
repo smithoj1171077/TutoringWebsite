@@ -1,5 +1,6 @@
 from django.db import models
 from studentrequest.models import Subject
+from django.contrib.auth.models import User
 
 # Create your models here.
 
@@ -20,6 +21,8 @@ class RevisionBook(models.Model):
 class CartItem(models.Model):
     product = models.ForeignKey(RevisionBook,on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=0)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
     def __str__(self):
         return f'{self.quantity} x {self.product.name}'
