@@ -62,10 +62,13 @@ def remove_from_cart(request, item_id):
         cart_item.save()
     else:
         cart_item.delete()
+    return redirect('store:view_cart')
+
 # due to the scope of the project, I will not be handling payment so this just resets the queue 
 def check_out(request):
     cart_items = CartItem.objects.filter(user=request.user)
     for item in cart_items:
+        item.quantity = 0
         item.delete()
     return render(request, 'store/cart.html', {'checkout':True})
 
