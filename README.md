@@ -56,9 +56,6 @@ As a customer, I want send the required information to get tutoring services onl
 - Product owner finds it acceptable.
 
 
-## About Us
-
-[Content about the business]
 
 ## Store
 
