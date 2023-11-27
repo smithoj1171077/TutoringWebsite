@@ -58,7 +58,7 @@ As a customer, I want send the required information to get tutoring services onl
 - Product owner finds it acceptable.
 
 **The too far away case**
-<br>![alt text](https://github.com/smithoj1171077/TutoringWebsite/commit/10c971b53ceb4741a5d62645dc32fdaf23fe2bde#diff-3a01654e7baa944258114649dd4062b59eb4634d64ce21d5a7d26b207ec3f102)</br>
+<br>![alt text](distance.PNG)</br>
 
 
 
