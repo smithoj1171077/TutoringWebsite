@@ -59,8 +59,10 @@ As a customer, I want send the required information to get tutoring services onl
 
 **The too far away case**
 <br>![alt text](distance.PNG)</br>
+![]([https://github.com/smithoj1171077/TutoringWebsite/blob/b39e39c3890139a276e14f3ff4fdfbc655d5a3e4/Exploring_blogs.gif](https://github.com/smithoj1171077/TutoringWebsite/blob/main/new_student_too_far.gif))
 
-
+**The student too young for the student case**
+![]([https://github.com/smithoj1171077/TutoringWebsite/blob/b39e39c3890139a276e14f3ff4fdfbc655d5a3e4/Exploring_blogs.gif](https://github.com/smithoj1171077/TutoringWebsite/blob/main/Student_too_young.gif))
 
 ## Store
 
