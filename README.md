@@ -5,10 +5,10 @@
 # The front page
 <br>![alt text](sitefrontpage.PNG)</br>
 
-*Link to Kanban board for project: [ACE Tutoring Kanban Board](https://github.com/users/smithoj1171077/projects/3/views/1)*
 
 # Project details
 
+*Link to Kanban board for project: [ACE Tutoring Kanban Board](https://github.com/users/smithoj1171077/projects/3/views/1)*
 **Owner:** Oliver Smith  
 **Stakeholders:** ACE Tutoring owner, tutors, and customers  
 **Status:** In planning    
