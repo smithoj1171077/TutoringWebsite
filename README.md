@@ -38,6 +38,7 @@ As the ACE Tutoring business owner, I want to upload blogs about subjects to my 
 - Implemented and passes testing.
 - Aesthetically pleasing and easy to use.
 - All stakeholers accept it.
+![](Exploring_blogs.gif)
 
 ### Booking Page
 
