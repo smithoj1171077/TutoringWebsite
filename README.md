@@ -2,7 +2,7 @@
 
 **A practice website built with Django for a fictional tutoring business - ACE Tutoring**
 <br></br>
-<p>The frontpage</p>
+the front page
 <br>![alt text](sitefrontpage.PNG)</br>
 
 *Link to Kanban board for project: [ACE Tutoring Kanban Board](https://github.com/users/smithoj1171077/projects/3/views/1)*
