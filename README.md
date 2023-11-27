@@ -61,6 +61,7 @@ As a customer, I want send the required information to get tutoring services onl
 <br>![alt text](distance.PNG)</br>
 ![]([https://github.com/smithoj1171077/TutoringWebsite/blob/main/new_student_too_far.gif](https://github.com/smithoj1171077/TutoringWebsite/commit/b39e39c3890139a276e14f3ff4fdfbc655d5a3e4#diff-2781cb2fc077739a03232b93003b3c124819f7a8c6c979a4fa6afc10783a7e90))
 <br></br>
+<br></br>
 **The student too young for the subject case**
 ![](https://github.com/smithoj1171077/TutoringWebsite/blob/b39e39c3890139a276e14f3ff4fdfbc655d5a3e4/Student_too_young.gif)
 <br></br>
@@ -79,5 +80,6 @@ As a student/parent I want to be able to purchase additional subject guides from
 **Definition of done**
 - Fully functional and passes testing
 - is asethetically appealing and easy to use
+<br></br>
 ![](https://github.com/smithoj1171077/TutoringWebsite/blob/b39e39c3890139a276e14f3ff4fdfbc655d5a3e4/Store_and_add_to_cart.gif)
 
