@@ -77,9 +77,8 @@ As a student/parent I want to be able to purchase additional subject guides from
 
 **Acceptance Criteria:**
 - front page links to index where the user can view the items for sale
-- user should be able to filter by subject
 - user should be able to click on an item and see a description, photo and price
-- add to cart
+- add to cart and remove from cart
 - check out form
 - database storage of items
 
