@@ -63,7 +63,6 @@ As a customer, I want send the required information to get tutoring services onl
 - Product owner finds it acceptable.
 
 **The too far away case**
-<br>![alt text](distance.PNG)</br>
 <br>
 ![](https://github.com/smithoj1171077/TutoringWebsite/blob/b39e39c3890139a276e14f3ff4fdfbc655d5a3e4/new_student_too_far.gif)
 </br>
