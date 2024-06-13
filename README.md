@@ -3,7 +3,7 @@
 **A practice website built with Django for a fictional tutoring business - ACE Tutoring**
 <br></br>
 # The front page
-<br>![alt text]("websitefront page.PNG")</br>
+<br>![alt text](frontACETutoring.PNG)</br>
 
 
 # Project details
